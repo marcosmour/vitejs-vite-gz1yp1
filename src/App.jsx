@@ -5,21 +5,23 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [plus, setPlus] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        Meu Projeto para incremento e decremento
       </div>
-      <h1>Vite + React</h1>
+      <h1>Meu Projeto</h1>
       <div className="card">
+        <label >count is {count}</label>
+        </div>
+        <div>
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          <p>incremento</p>
+        </button>
+        <button onClick={() => setCount((count) => count - 1)}>
+          <p>decremento</p>
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
